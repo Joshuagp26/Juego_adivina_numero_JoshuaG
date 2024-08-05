@@ -1,6 +1,6 @@
 <h1>Encriptador de Texto </h1>
 <h2>Primero challenger creando un encriptador de texto.</h2>
-Puedes escribir un mensaje encriptarlo y luego desencriptar asi ver su mensaje. 
+Puedes escribir un mensaje encriptarlo y mantenerlo secreto y luego desencriptar. 
 
 -----------------------------------------------------------------------------------------
 MENSAJE SECRETO!

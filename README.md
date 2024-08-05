@@ -2,6 +2,9 @@
 <h2>Primero challenger creando un encriptador de texto.</h2>
 Puedes escribir un mensaje encriptarlo y luego desencriptar asi ver su mensaje. 
 
+-----------------------------------------------------------------------------------------
+MENSAJE SECRETO!
+-----------------------------------------------------------------------------------------
 mimes nobermbrenter enters jobershufatai gufatimesllentern tenterngober 28, aiñobers y menter gufatstai   
 mufatchober lai probergraimaicimesobern y enterl dimessenterñober. enterstenter enterncrimesptaidoberr denter tenterxtober enters aidaiptaiblenter ai vairimesobers timespobers denter paintaillais. 
 

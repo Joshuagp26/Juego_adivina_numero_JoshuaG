@@ -1,0 +1,283 @@
+/*// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-texto {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}*/
+*{
+    padding: 0;
+    
+}
+:root{
+    --textos: "Inter", sans-serif;
+
+}
+
+body{
+    width: 98%;
+    background-color: #e4e4e4;
+    height: 100vh;
+    margin: 0;
+}
+.logo{
+    padding: 8px;
+}
+.textoPrincipalAside{
+    font-family: var(--textos);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.contenedor{
+   display: flex;
+   width: auto;
+   justify-content: center;
+   height: 700px;
+}
+.requisitos{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 4px 0px 8px 16ch;
+    
+}
+
+.vector{
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+}
+.vectorTexto{
+    margin: 0;
+    font-family: var(--textos);
+    font-size: 60%;
+
+}
+.contenedorBotones{
+  display: flex;
+  flex-direction: row;
+  gap: 24px ;
+  padding: 0px 0px 0px 16ch;
+}
+.botonEncriptar{
+    font-family: var(--textos);
+    background-color: #0A3871;
+    color: white;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    border-color: #030000;
+}
+    .botonEncriptar::after{
+        content: "";
+        width: 100%;
+        height: 110%;
+        background-color: black;
+        position: absolute;
+        z-index: -1;
+        top: -1px;
+        left: -328px;
+        transition: .3s ease-in-out;
+    }
+    .botonEncriptar:hover::after{
+        left: 0px;
+        width: 200%;
+    }
+
+
+.botonDesencriptar{
+    background-color: #D8DFE8;
+    width: 328px;
+    height: 67px;
+    color: #0A3871;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    border-color: rgb(140, 189, 235);
+    
+}
+    .botonDesencriptar::after{
+        content: "";
+        width: 100%;
+        height: 110%;
+        background-color: rgb(140, 189, 235);
+        position: absolute;
+        z-index: -1;
+        top: -1px;
+        left: -328px;
+        transition: .3s ease-in-out;
+    }
+    .botonDesencriptar:hover::after{
+        left: 0px;
+        width: 200%;
+    }
+
+.contDerecho{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 3% ;
+    border-radius: 32px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2%;
+    gap: 16px;
+    width: 20%;
+    min-height: 650px;
+    
+}
+.cambio{
+    justify-content: space-between;
+    width: 400px;
+    word-break: break-all;
+    min-height: auto;
+    padding: 3% ;
+    border-radius: 32px;
+    align-items: center;
+    margin-right: 2%;
+    gap: 16px;
+    width: 500px;  
+}
+
+
+.imagenDerecha{
+    width: 100%;
+}
+.textoPrincipalAside{
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    box-sizing: border-box;
+/*overflow-y para adaptar el texto*/
+    overflow-y: auto;
+}
+
+.textoSecundarioAside{
+    font-family: var(--textos);
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+
+.contenedorTexto1{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    padding: 0 3% 0 0;
+    border: none;
+    
+}
+.cajaTexto1{
+    font-size: 32px;
+    margin: 3% 0 0 10%;
+    border: 0;
+    width: 90%;
+    height: 100%;
+    background-color: #e4e4e4;
+    resize: none;
+    outline: none;
+}
+.copiar{
+    font-family: var(--textos);
+    background-color: white;
+    width: 328px;
+    height: 67px;
+    color: #0A3871;
+    border-radius: 24px;
+    border-color: #0A3871;
+    padding-bottom: 23px;
+    text-align:center;
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    border-color: rgb(0, 8, 15);
+
+}
+    .copiar::after{
+        content: "";
+        width: 100%;
+        height: 110%;
+        background-color: rgb(127, 189, 247);
+        position: absolute;
+        z-index: -1;
+        top: -1px;
+        left: -328px;
+        transition: .3s ease-in-out;
+    }
+    .copiar:hover::after{
+        left: 0px;
+        width: 200%;
+    }
+
+@media (max-width : 843px) {
+    
+    .contenedor{
+        flex-direction: column;
+        height: 90%;
+        padding-left: 2%;
+    }
+
+    .contenedorTexto1{
+        width: auto;
+        height: 75%;
+        padding-bottom: 30px;
+    }
+
+    .cajaTexto1{
+        width: auto;
+        margin: 0 0 0 2%;
+        
+    }
+
+    .requisitos{
+        padding-left: 2%;
+    }
+    .contenedorBotones{
+        padding: 0 2% 0 2%;
+    }
+    .imagenDerecha{
+        display: none;
+    }
+    .contDerecho{
+        width: auto;
+        min-height: 100px;
+        max-height: 300px;
+        margin-left: 10px;    
+    }
+    .textoPrincipalAside{
+    font-size: 120%;
+    }
+    .cambio{
+        min-height: 200px;
+        max-height: 300px;
+    }
+
+
+
+}
+
+@media (max-width:376px) {
+    
+    .contenedorBotones{
+        flex-direction: column;  
+        gap: 8px;  
+    }
+    .botonDesencriptar{width: 100%;}
+    .botonEncriptar{width: 100%;}
+    .copiar{width: 100%;}
+}
+footer{
+display: none;
+}

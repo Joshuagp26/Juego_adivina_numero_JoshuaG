@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incriptador texto</title>
+   <link rel="stylesheet" href="estiloincriptador.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header>
+            <img class="logo" src="recursos/Logo (1).png" alt="Logo_Incriptador">
+     </header>
+    <section class="contenedor">
+        <section class="contenedorTexto1">
+            <textarea id="cajaDeTexto1" class="cajaTexto1" placeholder="Ingrese su texto aqui"></textarea>
+             <div class="requisitos">
+                <img class="vector" src="recursos/Vector.png" alt="">
+                <p class="vectorTexto"> Solo letras minúsculas y sin acentos</p>
+             </div>
+            <div class="contenedorBotones">            
+                <button onclick="encriptar();" class="botonEncriptar ">Encriptar</button>
+                <button onclick="desEncriptar();" class="botonDesencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <aside id="Actualizar"  class="contDerecho ">
+            <img  class="imagenDerecha" src="recursos/Muñeco.png" alt="">
+            <p class="textoPrincipalAside">Ningún mensaje fue encontrado</p>
+            <p class="textoSecundarioAside">Ingresa el texto que desee encriptar o desencriptar.</p>
+            <button onclick="copiar();" class="copiar" >Copiar</button>
+        </aside>
+    </section>
+    <script src="codigoincriptador.js"></script>
+    <footer>Joshua Guillen</footer>
+</body>
+</html>
